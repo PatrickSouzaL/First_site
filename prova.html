@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Avaliação Final </title>
+    <link rel="stylesheet" href="prova.css">
+    <script type="text/javascript" src="cadastro.js"></script>
+</head>
+
+<body>
+
+    <div id="topo"> 
+        <br/><br/>
+        <h3>Avaliação Final | Curso Básico - PowerPoint</h3> 
+        <br/><br/><br/>
+        <p><b>*</b> Acerte 70% das questões para ganhar o Certificado de Conclusão</p>
+    </div>
+
+    <div id="corpo">
+
+        <form action="" method="dialog" onsubmit="correcao()">
+            <div id="cabecalho">
+                <label> Nome: </label>
+                <input type="text" name="nome" id="nome" placeholder="Digite seu nome completo">
+
+                
+
+                <div id="avaliacao">
+                    Avalie este curso:
+                    <br/><br/>
+                    <img src="img/star0.png" id="s1" onclick="Avaliar(1)">   
+                    <img src="img/star0.png" id="s2" onclick="Avaliar(2)">  
+                    <img src="img/star0.png" id="s3" onclick="Avaliar(3)">    
+                    <img src="img/star0.png" id="s4" onclick="Avaliar(4)">    
+                    <img src="img/star0.png" id="s5" onclick="Avaliar(5)">
+
+                    <p id="rating">0</p>
+                </div>
+
+
+                
+            </div>
+
+            <div id="questao">
+
+                <br/><br/>
+                <label id="pergunta"> 1- O que e PowerPoint? </label>
+                <br/><br/><br/>
+                <label>                     
+                    <div id="correta"><input type="radio" name="questao1" id="correta1" required></div>  
+                    <div id="resposta"> 
+                        ( A ) Um software para editar apresentações. Através de slides você <br/> 
+                        pode apresentar o conteúdo que deseja, adaptado ao seu gosto.
+                    </div>
+                </label>
+                <br/>
+                <label>                     
+                    <input type="radio" name="questao1" id="errada" required>  
+                    <div id="resposta"> 
+                        ( B ) Aplicativo de jogo
+                    </div>
+                </label>
+                <br/>
+                <label>                     
+                    <input type="radio" name="questao1" id="errada" required>  
+                    <div id="resposta"> 
+                        ( C ) Os slides são as unidades que compõem sua apresentação.
+                    </div>
+                </label>
+                <br/>
+                <label>                     
+                    <input type="radio" name="questao1" id="errada" required>  
+                    <div id="resposta"> 
+                        ( D ) Editar documento.
+                    </div>
+                </label>
+
+            </div>
+
+            <div id="questao">
+
+                <br/><br/>
+                <label id="pergunta"> 2 - O arquivo PowePoint é salvo em qual formatação? </label>
+                <br/><br/><br/>
+                <label>                     
+                    <input type="radio" name="questao2" id="errada" required>  
+                    <div id="resposta"> 
+                        ( A ) pdf
+                    </div>
+                </label>
+                <br/>
+                <label>                     
+                    <div id="correta"><input type="radio" name="questao2" id="correta2" required></div>  
+                    <div id="resposta"> 
+                        ( B ) ppt ou pptf
+                    </div>
+                </label>
+                <br/>
+                <label>                     
+                    <input type="radio" name="questao2" id="errada" required>  
+                    <div id="resposta"> 
+                        ( C ) doc.word
+                    </div>
+                </label>
+                <br/>
+                <label>                     
+                    <input type="radio" name="questao2" id="errada" required>  
+                    <div id="resposta"> 
+                        ( D ) *.xlsx
+                    </div>
+                </label>
+
+            </div>
+
+            <div id="questao">
+
+                <br/><br/>
+                <label id="pergunta"> 3 - Qual atalho para salvar arquivo no PowerPoint? </label>
+                <br/><br/><br/>
+                <label>                     
+                    <input type="radio" name="questao3" id="errada" required>  
+                    <div id="resposta"> 
+                        ( A ) Ctrl+N    
+                    </div>
+                </label>
+                <br/>
+                <label>                     
+                    <input type="radio" name="questao3" id="errada" required>  
+                    <div id="resposta"> 
+                        ( B ) Ctrl+M
+                    </div>
+                </label>
+                <br/>
+                <label>                     
+                    <div id="correta"><input type="radio" name="questao3" id="correta3" required></div>  
+                    <div id="resposta"> 
+                        ( C ) Ctrl+S
+                    </div>
+                </label>
+                <br/>
+                <label>                     
+                    <input type="radio" name="questao3" id="errada" required>  
+                    <div id="resposta"> 
+                        ( D ) F5
+                    </div>
+                </label>
+
+            </div>
+
+            <div id="questao">
+
+                <br/><br/>
+                <label id="pergunta"> 4 - Qual guia é iniciada ao abrir o PowerPoint? </label>
+                <br/><br/><br/>
+                <label>                     
+                    <div id="correta"><input type="radio" name="questao4" id="correta4" required></div>  
+                    <div id="resposta"> 
+                        ( A ) Página Inicial   
+                    </div>
+                </label>
+                <br/>
+                <label>                     
+                    <input type="radio" name="questao4" id="errada" required>  
+                    <div id="resposta"> 
+                        ( B ) Transições
+                    </div>
+                </label>
+                <br/>
+                <label>                     
+                    <input type="radio" name="questao4" id="errada" required>  
+                    <div id="resposta"> 
+                        ( C ) Arquivo
+                    </div>
+                </label>
+                <br/>
+                <label>                     
+                    <input type="radio" name="questao4" id="errada" required>  
+                    <div id="resposta"> 
+                        ( D ) Inserir
+                    </div>
+                </label>
+
+            </div>
+
+            <div id="questao">
+
+                <br/><br/>
+                <label id="pergunta"> 5 - Qual função do Alt+F4 no PowerPoint? </label>
+                <br/><br/><br/>
+                <label>                     
+                    <input type="radio" name="questao5" id="errada" required>  
+                    <div id="resposta"> 
+                        ( A ) Alinhar um parágrafo à direita.   
+                    </div>
+                </label>
+                <br/>
+                <label>                     
+                    <input type="radio" name="questao5" id="errada" required>  
+                    <div id="resposta"> 
+                        ( B ) Ir para o próximo slide.
+                    </div>
+                </label>
+                <br/>
+                <label>                     
+                    <input type="radio" name="questao5" id="errada" required>  
+                    <div id="resposta"> 
+                        ( C ) Justificar um parágrafo.
+                    </div>
+                </label>
+                <br/>
+                <label>                     
+                    <div id="correta"><input type="radio" name="questao5" id="correta5" required></div>  
+                    <div id="resposta"> 
+                        ( D ) Fechar a janela ativa.
+                    </div>
+                </label>
+
+            </div>
+
+            <div id="questao">
+
+                <br/><br/>
+                <label id="pergunta"> 
+                    6 - O botão "Comentário", disponível no Microsoft PowerPoint para Office 365, tem como funcionalidade inserir um(a) 
+                </label>
+                <br/><br/><br/>
+                <label>                     
+                    <input type="radio" name="questao6" id="errada" required>  
+                    <div id="resposta"> 
+                        ( A ) novo slide.   
+                    </div>
+                </label>
+                <br/>
+                <label>                     
+                    <input type="radio" name="questao6" id="errada" required>  
+                    <div id="resposta"> 
+                        ( B ) tabela.
+                    </div>
+                </label>
+                <br/>
+                <label>                     
+                    <input type="radio" name="questao6" id="errada" required>  
+                    <div id="resposta"> 
+                        ( C ) caixa de diálogo.
+                    </div>
+                </label>
+                <br/>
+                <label>                     
+                    <div id="correta"><input type="radio" name="questao6" id="correta6" required></div>  
+                    <div id="resposta"> 
+                        ( D ) comentário.
+                    </div>
+                </label>
+
+            </div>
+
+            <div id="questao">
+
+                <br/><br/>
+                <label id="pergunta"> 
+                    7 - Quem foi o criador do PowerPoint? 
+                </label>
+                <br/><br/><br/>
+                <label>                     
+                    <input type="radio" name="questao7" id="errada" required>  
+                    <div id="resposta"> 
+                        ( A ) Bill Gates   
+                    </div>
+                </label>
+                <br/>
+                <label>                     
+                    <input type="radio" name="questao7" id="errada" required>  
+                    <div id="resposta"> 
+                        ( B ) Stan Lee
+                    </div>
+                </label>
+                <br/>
+                <label>                     
+                    <input type="radio" name="questao7" id="errada" required>  
+                    <div id="resposta"> 
+                        ( C ) Paul Allen
+                    </div>
+                </label>
+                <br/>
+                <label>                     
+                    <div id="correta"><input type="radio" name="questao7" id="correta7" required></div>  
+                    <div id="resposta"> 
+                        ( D ) Robert Gaskins
+                    </div>
+                </label>
+
+            </div>
+
+            <div id="questao">
+
+                <br/><br/>
+                <label>
+                    <div id="pergunta"> 
+                        8 - No MS-Powerpoint existe um atalho de teclado para que o usuário inicie uma apresentação de slides <br/>
+                        a partir do 1° slide contido no arquivo. Este atalho é: 
+                    </div>
+                </label>
+                <br/><br/>
+                <label>                     
+                    <input type="radio" name="questao8" id="errada" required>  
+                    <div id="resposta"> 
+                        ( A ) F2   
+                    </div>
+                </label>
+                <br/>
+                <label>                     
+                    <input type="radio" name="questao8" id="errada" required>  
+                    <div id="resposta"> 
+                        ( B ) CTROL+L
+                    </div>
+                </label>
+                <br/>
+                <label>                     
+                    <div id="correta"><input type="radio" name="questao8" id="correta8" required></div>  
+                    <div id="resposta"> 
+                        ( C ) F5
+                    </div>
+                </label>
+                <br/>
+                <label>                     
+                    <input type="radio" name="questao8" id="errada" required>  
+                    <div id="resposta"> 
+                        ( D ) CTROL+A
+                    </div>
+                </label>
+
+            </div>
+
+            <div id="questao">
+
+                <br/><br/>
+                <label>
+                    <div id="pergunta"> 
+                        9 - Qual a finalidade do Microsoft PowerPoint? 
+                    </div>
+                </label>
+                <br/><br/>
+                <label>                     
+                    <input type="radio" name="questao9" id="errada" required>  
+                    <div id="resposta"> 
+                        ( A ) Editor de vídeos.   
+                    </div>
+                </label>
+                <br/>
+                <label>                     
+                    <div id="correta"><input type="radio" name="questao9" id="correta9" required></div>  
+                    <div id="resposta"> 
+                        ( B ) Criação, edição e apresentações de slides.
+                    </div>
+                </label>
+                <br/>
+                <label>                     
+                    <input type="radio" name="questao9" id="errada" required>  
+                    <div id="resposta"> 
+                        ( C ) Rede social.
+                    </div>
+                </label>
+                <br/>
+                <label>                     
+                    <input type="radio" name="questao9" id="errada" required>  
+                    <div id="resposta"> 
+                        ( D ) Editor de planilhas.
+                    </div>
+                </label>
+
+            </div>
+
+            <div id="questao">
+
+                <br/><br/>
+                <label>
+                    <div id="pergunta"> 
+                        10 - Verifique as assertivas e assinale a correta. <br/> <br/>
+                        Com o PowerPoint é possível: <br/> <br/>
+                        I. Criar apresentações do zero ou usar um modelo. <br/>
+                        II. Adicionar texto, imagens, arte e vídeos. <br/>
+                        III. Escolher um design profissional com o Designer do PowerPoint. <br/>
+                        IV. Adicionar transições, animações e movimentos.
+                    </div>
+                </label>
+                <br/><br/>
+                <label>                     
+                    <input type="radio" name="questao10" id="errada" required>  
+                    <div id="resposta"> 
+                        ( A ) Apenas as assertivas II e III são corretas.  
+                    </div>
+                </label>
+                <br/>
+                <label>                     
+                    <div id="correta"><input type="radio" name="questao10" id="correta10" required></div>  
+                    <div id="resposta"> 
+                        ( B ) As assertivas I, II, III e IV são corretas.
+                    </div>
+                </label>
+                <br/>
+                <label>                     
+                    <input type="radio" name="questao10" id="errada" required>  
+                    <div id="resposta"> 
+                        ( C ) Apenas as assertivas I, III e IV são corretas.
+                    </div>
+                </label>
+                <br/>
+                <label>                     
+                    <input type="radio" name="questao10" id="errada" required>  
+                    <div id="resposta"> 
+                        ( D ) Apenas as assertivas I, II e III são corretas.
+                    </div>
+                </label>
+
+            </div>
+
+            <div id="questao">
+
+                <br/><br/>
+                <label>
+                    <div id="pergunta"> 
+                        11 - Considerando o sistema operacional Microsoft Windows em sua versão 10, qual é o programa indicado para abrir um arquivo que possua a extensão “pptx”?
+                    </div>
+                </label>
+                <br/><br/>
+                <label>                     
+                    <input type="radio" name="questao11" id="errada" required>  
+                    <div id="resposta"> 
+                        ( A ) Excel 
+                    </div>
+                </label>
+                <br/>
+                <label>                     
+                    <input type="radio" name="questao11" id="errada" required>  
+                    <div id="resposta"> 
+                        ( B ) Word
+                    </div>
+                </label>
+                <br/>
+                <label>                     
+                    <input type="radio" name="questao11" id="errada" required>  
+                    <div id="resposta"> 
+                        ( C ) Calc
+                    </div>
+                </label>
+                <br/>
+                <label>                     
+                    <div id="correta"><input type="radio" name="questao11" id="correta11" required></div>  
+                    <div id="resposta"> 
+                        ( D ) PowerPoint
+                    </div>
+                </label>
+
+            </div>
+
+            <div id="questao">
+
+                <br/><br/>
+                <label>
+                    <div id="pergunta"> 
+                        12 - No aplicativo de apresentação Microsoft PowerPoint, o que representa uma “transição”?
+                    </div>
+                </label>
+                <br/><br/>
+                <label>                     
+                    <input type="radio" name="questao12" id="errada" required>  
+                    <div id="resposta"> 
+                        ( A ) A Animação ao exibir um elemento no slide. 
+                    </div>
+                </label>
+                <br/>
+                <label>                     
+                    <input type="radio" name="questao12" id="errada" required>  
+                    <div id="resposta"> 
+                        ( B ) Som executado ao surgir um texto.
+                    </div>
+                </label>
+                <br/>
+                <label>                     
+                    <div id="correta"><input type="radio" name="questao12" id="correta12" required></div>
+                    <div id="resposta"> 
+                        ( C ) Animação ao avançar para o próximo slide.
+                    </div>
+                </label>
+                <br/>
+                <label>                     
+                    <input type="radio" name="questao12" id="errada" required>  
+                    <div id="resposta"> 
+                        ( D ) Mudança no tema da apresentação.
+                    </div>
+                </label>
+
+            </div>
+
+            <div id="final">
+                <button type="submit"> ENVIAR </button>
+            </div>
+        </form>
+
+    </div>
+
+</body>
+
+</html>

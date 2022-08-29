@@ -1,0 +1,241 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* CABEÇALHO */
+
+#header {
+    display: flex;
+    width: 100%;
+    height: 100px;
+    box-shadow: 0 0 7px #a1a1a1;
+    
+}
+
+#logo {
+    width: 8%;
+    height: 80%;
+    background-image: url(img/IANES\ Tech.png);
+    background-size: 100% 100%;
+    box-shadow: 0 0 4px #646464;
+    margin: 0 auto;
+    margin-right: 37%;
+    margin-top: 0.5%;
+    border-radius: 35px;
+}
+
+#login{
+    width: 8%;
+    height: 60%;
+    float: right;
+    margin-right: 2%;
+    margin-top: 1%;
+}
+
+#bt-login {
+    width: 100%;
+    height: 100%;
+    border-style: none;
+    border-radius: 30px;
+    background-color: #4000AB;
+    box-shadow: 0 0 4px #646464;
+    color: #fff;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bolder;  
+}
+
+#bt-login:hover {
+    cursor: pointer;
+    background-color: #3f00ab93; 
+    box-shadow: 0 3px 4px #646464;
+}
+
+/* FIM CABEÇALHO */
+
+/* CORPO */
+
+#body {
+    width: 100%;
+    height: 400px;
+}
+
+input {
+    outline: none;
+    background-color: #e4c6ffa2;
+    border: 1.5px solid #3f0196;
+    border-radius: 15px;
+    box-shadow: 0 0 4px #3f019688;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    transition: width .25s ease-in-out;
+}
+
+input:hover {  
+    background-color: #7942b459;
+    box-shadow: 0 3px 4px #3f019688;
+}
+
+label {
+    cursor: text;
+    font-weight: bolder;
+    color: #3f0196;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#div1 {
+    width: 55%;
+    height: 100px;
+    float: left;
+    margin-top: 3%;
+    margin-left: 25%;
+}
+
+#div_nome {
+    width: 35.5%;
+    height: 40px;
+    float: left;
+    margin-left: 20%;
+}
+
+#nome {
+    width: 84%;
+    height: 25px;
+}
+
+#div_cpf {
+    width: 18%;
+    height: 40px;
+    float: left;
+    margin-left: 1%;
+}
+
+#cpf {
+    width: 73%;
+    height: 25px;
+}
+
+#div_cep {
+    width: 15%;
+    height: 40px;
+    float: left;
+    margin-left: 20%;
+    margin-top: 3%;
+}
+
+#cep {
+    width: 70%;
+    height: 25px;
+}
+
+#div_num {
+    width: 19%;
+    height: 40px;
+    float: left;
+    margin-left: 1%;
+    margin-top: 3%;
+}
+
+#num {
+    width: 40%;
+    height: 25px;
+}
+
+#div_tel {
+    width: 22%;
+    height: 40px;
+    float:left;
+    margin-left: 1%;
+    margin-top: 3%;
+}
+
+#telefone {
+    width: 62%;
+    height: 25px;
+}
+
+#div2 {
+    width: 55%;
+    height: 105px;
+    float: left;
+    margin-top: 1.6%;
+    margin-left: 25%;
+}
+
+#div_email {
+    width: 38%;
+    height: 40px;
+    margin: 0 auto;
+    margin-left: 20%;
+}
+
+#email {
+    width: 82%;
+    height: 25px;
+}
+
+#div_senha {
+    width: 20%;
+    height: 40px;
+    float:left;
+    margin-left: 20%;
+    margin-top: 3%;
+}
+
+#senha {
+    width: 95%;
+    height: 25px;
+}
+
+#div_termos {
+    width: 50%;
+    height: 40px;
+    float:left;
+    margin-top: 2.5%;
+    margin-left: 24.5%;
+    text-align: center;
+}
+
+#termos {
+    cursor: pointer;
+}
+
+a {
+    font-weight: bolder;
+    color: #3f0196;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;    
+}
+
+input[type=checkbox] {
+    cursor: pointer;
+}
+
+#div_criar {
+    width: 30%;
+    height: 40px;
+    float:left;
+    margin-left: 35%; 
+    margin-top: 5%;
+    text-align: center;
+}
+
+#bt_criar {
+    width: 12%;
+    height: 30px;
+    border-radius: 8px;
+    border-style: none;
+    background-color: #7300eefb;
+    box-shadow: 0 0 4px #646464;
+    color: #fff;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bolder;    
+}
+
+#bt_criar:hover {
+    background-color: #974ae9fb; 
+    box-shadow: 0 3px 4px #646464;
+    cursor: pointer;
+}
+
+/* FIM CORPO */

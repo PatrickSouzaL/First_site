@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Conteúdo Curso </title>
+    <link rel="stylesheet" href="conteudo.css">
+    <script type="text/javascript" src="cadastro.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <div id="arealogo">
+            <a href="home.html"><img src="img/logo.png" title="logo"></a>
+        </div>
+
+        <nav>
+            <div id="btn" onclick="sobre()">Sobre</div>
+            <div id="btn" onclick="contato()">Contato</div>
+            <div id="btn" onclick="meuscursos()">Meus Cursos</div>
+            <div id="btn" onclick="logout()">Logout</div>
+        </nav>
+    </header>
+
+    <!--------------------------------------------------------------------------->
+
+    <div id="meio">
+
+        <div id="videoaula">
+            <div id="video">
+                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/eoE_O_nVWcM" 
+                title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
+                clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+
+        <div id="div_aulas">
+            <div class="btn-aula" id="aula1" onclick="show1()"><br/> Aula 1 </div>
+            <div class="btn-aula" id="aula2" onclick="show2()"><br/> Aula 2 </div>
+            <div class="btn-aula" id="aula3" onclick="show3()"><br/> Aula 3 </div>
+            <div class="btn-aula" id="aula4" onclick="show4()"><br/> Aula 4 </div>
+            <div class="btn-aula" id="aula5" onclick="show5()"><br/> Aula 5 </div>
+            <div class="btn-aula" id="aula6" onclick="show6()"><br/> Aula 6 </div>
+
+            <div id="prova" onclick="prova()"><br/> Realizar Prova </div>
+        </div>
+
+        <div id="div_descricao">
+
+            <div id="topo_descricao">
+
+                <div id="descricao" onclick="descricao()">
+                    <div id="t_descricao">DESCRIÇÃO</div>
+                </div>
+
+                <div id="comentario" onclick="comentario()">
+                    <div id="t_comentario">COMENTÁRIO</div>
+                </div>
+
+                <div id="div_mostrar">
+                    <div id="mostrar">
+
+                        AULA 1   <br/>
+                        Ensinando os fundamentos básicos do Power Point para futuramente aprofundarmos
+
+                    </div>
+                </div>                        
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <footer>
+        <div id="footerCont">
+            <div id="footerCont1"><a href="home.html"><img src="img/logo.png"></a></div>
+            <div id="footerCont2">Copyright © 2022 Ianes Tech - Todos os Direitos Reservados</div>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>
