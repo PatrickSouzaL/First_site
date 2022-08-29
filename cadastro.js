@@ -577,7 +577,7 @@ function prova() {
 
         if (user.aula_ == 6) {
             if (user.nota_ == 1){
-                alert("*** Certificado ***")
+                window.location.assign("certificado.html");
             } else {
                 window.location.assign("prova.html");
             }
@@ -702,8 +702,6 @@ function correcao() {
                                                 nota_: user.nota_,
                                                 avv_: user.avv_                                                
                                             }));
-
-    alert(certas);
 
     if (certas >= 8) {
         alert("Parabéns! Você foi aprovado com " + certas + " acertos!");
